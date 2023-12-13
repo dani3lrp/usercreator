@@ -16,11 +16,11 @@ public class UserDTO {
     private String name;
 
     @NotNull(message = "The email cannot be empty")
-    @Email(regexp = ".+@.+\\..+", message = "The email has an incorrect format")
+    @Email(regexp = ".+@.+\\..+", message = "Email con formato incorrecto")
     private String email;
 
     @NotNull(message = "The password cannot be empty")
-    @Size(min = 8, max = 12, message = "The password must be between 8 and 12 characters")
+    @Size(min = 8, max = 12, message = "Password debe contener entre 8 a 12 caracteres")
     private String password;
 
     private List<@Valid PhoneDTO> phones;
